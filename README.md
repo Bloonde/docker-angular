@@ -118,7 +118,7 @@ Desde raíz del proyecto (`pwd`):
    docker run -v ${PWD}:/app -v /app/node_modules -p 8081:8080 --rm angular-app:dev
    ```
 
-6. Verificar abriendo [http://localhost:8081](http://localhost:8081) en el navegador y que con `docker ps` aparece un contenedor levantado con la imagen que hemos creado antes `angular-app:dev`.
+6. Verificar abriendo [http://localhost:4201](http://localhost:4201) en el navegador y que con `docker ps` aparece un contenedor levantado con la imagen que hemos creado antes `angular-app:dev`.
 
 7. Para verificar el hot-reloading modifica un componente en la aplicación (`src/app/app.component.html` por ejemplo), el navegador debe recargarse con los cambios.
 
