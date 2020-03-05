@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  angular-app:
+    container_name: ${PROJECT_NAME}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '../:/app'
+#      - './app/node_modules'
+    ports:
+      - "4021:4200"
